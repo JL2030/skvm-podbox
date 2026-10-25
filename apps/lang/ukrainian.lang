@@ -284,7 +284,7 @@
   desc: main menu title
   user: core
   <source>
-    *: "Rockbox"
+    *: "SKVM PODBOX"
   </source>
   <dest>
     *: "Рокбокс"

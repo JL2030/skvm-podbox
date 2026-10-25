@@ -284,10 +284,10 @@
   desc: main menu title
   user: core
   <source>
-    *: "Rockbox"
+    *: "SKVM PODBOX"
   </source>
   <dest>
-    *: "Rockbox"
+    *: "SKVM PODBOX"
   </dest>
   <voice>
     *: "Rokbokss"
