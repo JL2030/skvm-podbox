@@ -1,12 +1,11 @@
 <p align="center">
-  <img src="screenshots/hero-image.jpeg" alt="SKVM PODBOX Hero Image" width="600">
   <h1 align="center">SKVM PODBOX</h1>
   <p align="center">
     Custom Rockbox firmware for iPod Classic and iPod Video.<br>
     MFi digital audio, Cover Flow, dynamic colors.
   </p>
   <p align="center">
-    <a href="https://github.com/nuxcodes/rockpod/releases/latest"><img src="https://img.shields.io/github/v/release/nuxcodes/rockpod?style=flat-square&color=blue" alt="Latest Release"></a>
+    <a href="https://github.com/JL2030/skvm-podbox/releases/latest"><img src="https://img.shields.io/github/v/release/JL2030/skvm-podbox?style=flat-square&color=blue" alt="Latest Release"></a>
     <br/>
     <a href='https://ko-fi.com/B0B61UR8ZH' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi5.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
   </p>
@@ -256,7 +255,7 @@ The repo includes third-party themes under `themes/`:
 
 > **Prerequisite:** Your iPod must already have the Rockbox bootloader installed. See the [Rockbox installation guide](https://www.rockbox.org/wiki/RockboxUtility) if needed.
 
-1. Download the correct zip from [Releases](https://github.com/nuxcodes/rockpod/releases/latest):
+1. Download the correct zip from [Releases](https://github.com/JL2030/skvm-podbox/releases/latest):
    - `rockbox-ipod6g.zip` for iPod Classic (6G/7G)
    - `rockbox-ipodvideo-5g.zip` for iPod Video (5G/5.5G)
 2. Connect your iPod in disk mode
