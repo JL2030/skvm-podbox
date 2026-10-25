@@ -6,7 +6,7 @@
  *   Firmware   |____|_  /\____/ \___  >__|_ \|___  /\____/__/\_ \
  *                     \/            \/     \/    \/            \/
  *
- * Copyright (C) 2026 Rockpod Contributors
+ * Copyright (C) 2026 SKVM PODBOX Contributors
  *
  * S5L8702 H.264 Hardware Video Decoder - Proof of Concept
  *

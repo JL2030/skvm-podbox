@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="screenshots/hero-image.jpeg" alt="Rockpod Hero Image" width="600">
-  <h1 align="center">Rockpod</h1>
+  <img src="screenshots/hero-image.jpeg" alt="SKVM PODBOX Hero Image" width="600">
+  <h1 align="center">SKVM PODBOX</h1>
   <p align="center">
     Custom Rockbox firmware for iPod Classic and iPod Video.<br>
     MFi digital audio, Cover Flow, dynamic colors.
@@ -14,9 +14,9 @@
 
 ---
 
-Rockpod is a [Rockbox](https://www.rockbox.org) fork for iPod Classic (6th/7th gen, 2007–2014) and iPod Video (5th/5.5th gen, 2005–2006). It adds MFi digital audio output, a rewritten Cover Flow, dynamic album art colors, and SSD-aware power management.
+SKVM PODBOX is a [Rockbox](https://www.rockbox.org) fork for iPod Classic (6th/7th gen, 2007–2014) and iPod Video (5th/5.5th gen, 2005–2006). It adds MFi digital audio output, a rewritten Cover Flow, dynamic album art colors, and SSD-aware power management.
 
-Rockpod supports both HDD and iFlash-modded units. Both iPod models share the same 320x240 display and get the same UI features — Cover Flow, dynamic colors, themes, and rendering improvements. Hardware-specific features like SSD power management and MFi digital audio are iPod Classic only for now. It's a drop-in replacement for the official Rockbox firmware, with no reformatting or data loss.
+SKVM PODBOX supports both HDD and iFlash-modded units. Both iPod models share the same 320x240 display and get the same UI features — Cover Flow, dynamic colors, themes, and rendering improvements. Hardware-specific features like SSD power management and MFi digital audio are iPod Classic only for now. It's a drop-in replacement for the official Rockbox firmware, with no reformatting or data loss.
 
 ---
 
@@ -25,7 +25,7 @@ Rockpod supports both HDD and iFlash-modded units. Both iPod models share the sa
 ### Digital Audio Output
 > Supported on iPod Classic 6G/7G
 
-Rockpod is the first open source firmware to support digital audio output over the iPod's dock connector. It handles the full Apple iAP authentication handshake, negotiates sample rate with the accessory, and sends bit-perfect PCM over USB, bypassing the iPod's internal DAC. The entire Rockbox DSP chain (EQ, crossfeed, replaygain) is preserved in the output path.
+SKVM PODBOX is the first open source firmware to support digital audio output over the iPod's dock connector. It handles the full Apple iAP authentication handshake, negotiates sample rate with the accessory, and sends bit-perfect PCM over USB, bypassing the iPod's internal DAC. The entire Rockbox DSP chain (EQ, crossfeed, replaygain) is preserved in the output path.
 
 This works with any MFi iPod dock connector accessory — DACs, speakers, docks, car stereos, and other digital audio accessories built for the iPod.
 
@@ -96,9 +96,9 @@ Key files:
 
 ### Cover Flow
 
-Stock PictureFlow shows 3 slides, uses hardcoded colors, and is buried in the plugins menu. Rockpod rewrites the renderer to match Apple's Cover Flow — 7 visible slides w/ uniform tilt angle, custom theme integration, status bar toggle, faster transitions — and promotes it to a top-level menu entry.
+Stock PictureFlow shows 3 slides, uses hardcoded colors, and is buried in the plugins menu. SKVM PODBOX rewrites the renderer to match Apple's Cover Flow — 7 visible slides w/ uniform tilt angle, custom theme integration, status bar toggle, faster transitions — and promotes it to a top-level menu entry.
 
-<!-- TODO: Add before/after screenshot — stock PictureFlow vs Rockpod Cover Flow -->
+<!-- TODO: Add before/after screenshot — stock PictureFlow vs SKVM PODBOX Cover Flow -->
 
 |                     Cover Flow                     |                        Full-screen mode                         |
 | :------------------------------------------------: | :-------------------------------------------------------------: |
@@ -141,7 +141,7 @@ The UI automatically extracts dominant and accent colors from the currently play
 ### Storage Mode
 > Supported on iPod Classic 6G/7G
 
-Rockpod works with both stock HDDs and iFlash SSD mods. HDD behavior is unchanged from stock Rockbox. When an SSD is detected, Rockpod switches to a lighter sleep strategy — faster wake times, lower idle power draw, and no unnecessary spin-up delays.
+SKVM PODBOX works with both stock HDDs and iFlash SSD mods. HDD behavior is unchanged from stock Rockbox. When an SSD is detected, SKVM PODBOX switches to a lighter sleep strategy — faster wake times, lower idle power draw, and no unnecessary spin-up delays.
 
 | Storage Mode                                         |
 | :--------------------------------------------------- |
@@ -185,7 +185,7 @@ Key file: `firmware/target/arm/s5l8702/ipod6g/storage_ata-6g.c`
 <details>
 <summary><strong>Under the hood: LTC4066 charge control</strong></summary>
 
-| GPIO      | Function          | Rockpod behavior                       |
+| GPIO      | Function          | SKVM PODBOX behavior                       |
 | --------- | ----------------- | -------------------------------------- |
 | B6 (HPWR) | USB current limit | LOW = 100 mA, HIGH = 500 mA            |
 | B7 (SUSP) | USB suspend       | Prevents any USB power draw            |
@@ -212,7 +212,7 @@ All standard Rockbox menu items are available.
 
 ### Improved UI Rendering
 
-- **Scroll-to-start flash eliminated** — custom themes with scrolling text in the main menu would flash or flicker when the scroll position reset to the start. Rockpod fixes the viewport rendering order to prevent this, making themed menus render cleanly without visual artifacts.
+- **Scroll-to-start flash eliminated** — custom themes with scrolling text in the main menu would flash or flicker when the scroll position reset to the start. SKVM PODBOX fixes the viewport rendering order to prevent this, making themed menus render cleanly without visual artifacts.
 - **Track name cleanup** — strips the "01 " numeric prefix that iTunes sync adds to filenames, so tracks display by their actual title across Cover Flow, Database, and WPS
 
 ---
@@ -240,7 +240,7 @@ The repo includes third-party themes under `themes/`:
 
 ## At a Glance
 
-|                         | Stock Rockbox                           | Rockpod                                        |
+|                         | Stock Rockbox                           | SKVM PODBOX                                        |
 | ----------------------- | --------------------------------------- | ---------------------------------------------- |
 | **MFi digital audio**   | Not supported                           | DACs, speakers, docks — Classic only           |
 | **Dynamic colors**      | Not supported                           | Album art color extraction with smooth fades   |

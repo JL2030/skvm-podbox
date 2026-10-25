@@ -346,8 +346,8 @@ $(BUILDDIR)/rockbox.zip:
 else
 $(BUILDDIR)/rockbox.zip: build
 endif
-	$(call PRINTS,ZIP rockbox$(ZIPFILESUFFIX).zip)
-	$(SILENT)$(TOOLSDIR)/buildzip.pl $(VERBOSEOPT) --app=$(APPLICATION) -m \"$(MODELNAME)\" -i \"$(TARGET_ID)\" -o $(BUILDDIR)/rockbox$(ZIPFILESUFFIX).zip -r "$(ROOTDIR)" --rbdir="$(RBDIR)" $(BUILDZIPOPTS) $(TARGET) $(BINARY)
+	$(call PRINTS,ZIP skvm-podbox$(ZIPFILESUFFIX).zip)
+	$(SILENT)$(TOOLSDIR)/buildzip.pl $(VERBOSEOPT) --app=$(APPLICATION) -m \"$(MODELNAME)\" -i \"$(TARGET_ID)\" -o $(BUILDDIR)/skvm-podbox$(ZIPFILESUFFIX).zip -r "$(ROOTDIR)" --rbdir="$(RBDIR)" $(BUILDZIPOPTS) $(TARGET) $(BINARY)
 
 mapzip:
 	$(SILENT)find . -name "*.map" | xargs zip rockbox-maps.zip
@@ -360,8 +360,8 @@ $(BUILDDIR)/rockbox.7z:
 else
 $(BUILDDIR)/rockbox.7z: build
 endif
-	$(call PRINTS,7Z rockbox$(ZIPFILESUFFIX).7z)
-	$(SILENT)$(TOOLSDIR)/buildzip.pl $(VERBOSEOPT) --app=$(APPLICATION) -m \"$(MODELNAME)\" -i \"$(TARGET_ID)\"  -o $(BUILDDIR)/rockbox$(ZIPFILESUFFIX).7z  -z "7za a -mx=9" -r "$(ROOTDIR)" --rbdir="$(RBDIR)" $(BUILDZIPOPTS) $(TARGET) $(BINARY)
+	$(call PRINTS,7Z skvm-podbox$(ZIPFILESUFFIX).7z)
+	$(SILENT)$(TOOLSDIR)/buildzip.pl $(VERBOSEOPT) --app=$(APPLICATION) -m \"$(MODELNAME)\" -i \"$(TARGET_ID)\"  -o $(BUILDDIR)/skvm-podbox$(ZIPFILESUFFIX).7z  -z "7za a -mx=9" -r "$(ROOTDIR)" --rbdir="$(RBDIR)" $(BUILDZIPOPTS) $(TARGET) $(BINARY)
 
 ifneq ($(NODEPS),)
 $(BUILDDIR)/rockbox.tar:
@@ -370,7 +370,7 @@ $(BUILDDIR)/rockbox.tar: build
 endif
 	$(SILENT)rm -f rockbox.tar
 	$(call PRINTS,TAR $(notdir $@))
-	$(SILENT)$(TOOLSDIR)/buildzip.pl $(VERBOSEOPT) --app=$(APPLICATION) -m \"$(MODELNAME)\" -i \"$(TARGET_ID)\"  -o $(BUILDDIR)/rockbox$(ZIPFILESUFFIX).tar -z "tar -cf" -r "$(ROOTDIR)" --rbdir="$(RBDIR)" $(BUILDZIPOPTS) $(TARGET) $(BINARY)
+	$(SILENT)$(TOOLSDIR)/buildzip.pl $(VERBOSEOPT) --app=$(APPLICATION) -m \"$(MODELNAME)\" -i \"$(TARGET_ID)\"  -o $(BUILDDIR)/skvm-podbox$(ZIPFILESUFFIX).tar -z "tar -cf" -r "$(ROOTDIR)" --rbdir="$(RBDIR)" $(BUILDZIPOPTS) $(TARGET) $(BINARY)
 
 fullgzip: ZIPFILESUFFIX=-full
 fullgzip: fulltar gzip
@@ -378,12 +378,12 @@ fullxz: ZIPFILESUFFIX=-full
 fullxz: fulltar xz
 
 gzip: tar
-	$(call PRINTS,GZIP rockbox$(ZIPFILESUFFIX).tar.gz)
-	$(SILENT)gzip -f9 rockbox$(ZIPFILESUFFIX).tar
+	$(call PRINTS,GZIP skvm-podbox$(ZIPFILESUFFIX).tar.gz)
+	$(SILENT)gzip -f9 skvm-podbox$(ZIPFILESUFFIX).tar
 
 xz: tar
-	$(call PRINTS,XZ rockbox$(ZIPFILESUFFIX).tar.xz)
-	$(SILENT)xz -f rockbox$(ZIPFILESUFFIX).tar
+	$(call PRINTS,XZ skvm-podbox$(ZIPFILESUFFIX).tar.xz)
+	$(SILENT)xz -f skvm-podbox$(ZIPFILESUFFIX).tar
 
 manual manual-pdf:
 	$(SILENT)$(MAKE) -C $(MANUALDIR) OBJDIR=$(BUILDDIR)/manual manual-pdf
