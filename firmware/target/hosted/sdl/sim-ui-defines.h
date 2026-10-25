@@ -385,7 +385,7 @@
 #define UI_LCD_POSY                 32
 
 #elif defined(APPLICATION)
-#define UI_TITLE                    "Rockbox"
+#define UI_TITLE                    "SKVM PODBOX"
 #define UI_LCD_POSX                 0
 #define UI_LCD_POSY                 0
 #define UI_WIDTH                    LCD_WIDTH
