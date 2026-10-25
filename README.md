@@ -309,3 +309,14 @@ Built on the work of the [Rockbox](https://www.rockbox.org/) project.
 ## License
 
 [GNU General Public License v2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+
+---
+
+## Supported devices
+
+**Stable**
+- Apple: iPod Classic 6G/7G, iPod Video 5G/5.5G
+
+**Unstable** — none yet (SKVM PODBOX targets iPod Classic/Video only).
+
+**Unusable** — all other Rockbox ports (not targeted by SKVM PODBOX).
