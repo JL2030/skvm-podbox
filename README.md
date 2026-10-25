@@ -301,7 +301,7 @@ cd build-sim && ./rockboxui
 
 ## Credits
 
-Built on the work of the [Rockbox](https://www.rockbox.org/) project and its contributors.
+Built on the work of the [Rockbox](https://www.rockbox.org/) project.
 
 - **Themes:** adwaitapod_dark_simplified and Themify 2 by [Dook](https://github.com/D0-0K) (CC-BY-SA)
 - **MFi reference:** [ipod-gadget](https://github.com/oandrew/ipod-gadget) descriptor layout, [rockbox-mojyack](https://github.com/mojyack/rockbox) iPod 5G iAP implementation, Apple MFi Accessory Firmware Specification
